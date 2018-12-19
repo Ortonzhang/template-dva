@@ -9,6 +9,8 @@ branch='git rev-parse --abbrev-ref HEAD'
 
 if [ "$branch" == 'master' ]
 
+echo "$project_name"
+
 then
 
   npm run build

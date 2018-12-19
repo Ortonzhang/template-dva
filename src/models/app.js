@@ -57,7 +57,6 @@ export default {
       yield put(routerRedux.push({
         pathname: '/list'
       }))
-     
     },
     *logout({
       payload

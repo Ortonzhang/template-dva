@@ -2,12 +2,14 @@ const path = require('path');
 const fs = require('fs')
 const packageJson = JSON.parse(fs.readFileSync('package.json'))
 
+console.log(`${packageJson.name}`)
+
 export default {
   define: {
     "process.env": {},
     "process.env.NODE_ENV": process.env.NODE_ENV,
     "process.env.API_ENV": process.env.API_ENV,
-    "process.env.PROJECT_NAME": `asaas`,
+    "process.env.PROJECT_NAME": `${packageJson.name}`,
   },
   extraBabelPlugins: [
     ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
@@ -23,7 +25,7 @@ export default {
     "@": path.resolve(__dirname, './src'),
   },
   publicPath: process.env.API_ENV === 'production' ? `//s1.mljr.com/${packageJson.name}` : process.env.API_ENV === 'testing' ? './' : '/',
-  outputPath: `dist/${process.env.PROJECT_NAME}`,
+  outputPath: `./dist/${packageJson.name}`,
   html: {
     template: './src/index.ejs',
   },

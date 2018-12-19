@@ -3,17 +3,8 @@
 
 > 基于dva和ant.design框架快速开发cms项目
 
-1. 创建新项目git地址，记住新项目名称和git地址
-2. 执行./shell.sh，更新项目名称以及配置文件。
-3. 更换仓库地址为新项目git地址
 
-```
-./shell.sh
-git remote set-url origin git@gxxxxx/xxxxx.git
-
-```
-
-**开发前请仔细阅读[react基础汇总](http://192.168.49.104/fe-docs/docs/tutorial/react_dva.html)**
+**开发前请仔细阅读[react基础汇总](http://192.168.49.104/fe-docs/docs/tutorial/react_dva.html)**
 
 
 ## 目录结构

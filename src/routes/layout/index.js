@@ -86,7 +86,7 @@ const LayoutIndex = ({ dispatch, app, children,
             defaultSelectedKeys={[status]}
             mode="inline" 
             onClick={hrefChange}>
-            <SubMenu key="sub1" title={<span><Icon type="dashboard" /><span>电子合同平台</span></span>}>
+            <SubMenu key="sub1" title={<span><Icon type="dashboard" /><span>某某某</span></span>}>
               {
                 menu.map(item => 
                   <Menu.Item key={item.url}>
