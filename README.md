@@ -1,7 +1,7 @@
-# dva-quick-cms
+# template-dva
 
 
-> 基于dva和ant.design框架快速开发cms项目
+> dva项目模版
 
 
 **开发前请仔细阅读[react基础汇总](http://192.168.49.104/fe-docs/docs/tutorial/react_dva.html)**
