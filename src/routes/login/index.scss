@@ -1,0 +1,29 @@
+$imgPath: '../../images';
+.login{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .header{
+    flex: 0 0 381px;
+    background: no-repeat 50% 50%;
+    background-image: url("#{$imgPath}/logo.png"), url("#{$imgPath}/logo2.jpg"), url("#{$imgPath}/banner.jpg");
+    background-size: auto, auto, cover;
+    background-position: 50% 160px, 50% 230px, 50% 50%;
+  }
+  .body{
+    position: relative;
+    .form{
+      width: 340px;
+      height: 320px;
+      padding: 36px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      // box-shadow: 0 0 100px rgba(0,0,0,.08);
+      .login-btn{
+        width: 100%;
+      }
+    }
+  }
+}
